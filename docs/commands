@@ -1,0 +1,8 @@
+virtualenv --python=python3 env
+source env/bin/activate
+python
+export PYTHONPATH=~/python/SecurePassword/
+export PYTHONPATH=~/python/SecurePassword/securepassword/
+pip install secret
+vim requirements.txt
+pytest -s tests/test_check.py  ## -s disable output capture
